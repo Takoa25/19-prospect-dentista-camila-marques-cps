@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display;
+    }
+
+    body {
+        @apply font-sans text-text-main bg-background-light dark:bg-background-dark dark:text-gray-100 overflow-x-hidden selection:bg-primary selection:text-white;
+    }
+
+    /* Estilos da Barra de Rolagem (Desktop) */
+    @media (min-width: 1024px) {
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            @apply bg-transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(232, 48, 94, 0.3);
+            border-radius: 20px;
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(232, 48, 94, 0.6);
+        }
+    }
+
+    /* Esconde barra de rolagem em dispositivos móveis e tablets */
+    @media (max-width: 1023px) {
+        ::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+
+    /* Firefox Support (Global) */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(232, 48, 94, 0.3) transparent;
+    }
+
+    @media (max-width: 1023px) {
+        * {
+            scrollbar-width: none;
+        }
+    }
+}
+
+@layer utilities {
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* Bento Grid Animations */
+    .bento-card {
+        touch-action: manipulation;
+        outline: none;
+    }
+
+    .bento-card:hover .bento-image,
+    .bento-card:active .bento-image,
+    .bento-card:focus-within .bento-image {
+        transform: scale(1.1);
+    }
+
+    .bento-card:hover .bento-content,
+    .bento-card:active .bento-content,
+    .bento-card:focus-within .bento-content {
+        transform: translateY(-8px);
+    }
+
+    .bento-image {
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .bento-content {
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+        opacity: 0;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) !important;
+        pointer-events: auto;
+    }
+
+    .reveal-up {
+        transform: translateY(40px);
+    }
+
+    .reveal-down {
+        transform: translateY(-40px);
+    }
+
+    .reveal-left {
+        transform: translateX(40px);
+    }
+
+    .reveal-right {
+        transform: translateX(-40px);
+    }
+
+    .reveal-scale {
+        transform: scale(0.95);
+    }
+}
