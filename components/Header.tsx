@@ -61,7 +61,7 @@ const Header: React.FC = () => {
            - Para a transparência: Altere 'bg-white/40' ou 'dark:bg-black/40' (o número /40 controla a opacidade).
            - Para o desfoque (blur): Altere 'backdrop-blur-xl' para 'backdrop-blur-md' (menos) ou 'backdrop-blur-2xl' (mais).
         */
-        <header className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 dark:bg-black/40 dark:border-white/10 transition-all duration-300 px-6 sm:px-10">
+        <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-white/20 dark:bg-black/40 dark:border-white/10 transition-all duration-300 px-6 sm:px-10">
             <div className="max-w-7xl mx-auto py-3 flex items-center justify-between whitespace-nowrap">
                 <div
                     className="flex items-center gap-3 text-primary cursor-pointer group"

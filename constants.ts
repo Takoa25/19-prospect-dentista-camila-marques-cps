@@ -320,8 +320,8 @@ export const FOOTER_CONTENT = {
     developerUrl: "https://takoadigital.com",
     croStatus: 'CRO-SP 139.585 | Resp. Téc. Dra. Camila Marques',
     socialLinks: {
-        instagram: '#',
-        facebook: '#'
+        instagram: 'https://www.instagram.com/dracamilamarquesz',
+        facebook: 'https://www.facebook.com/clinicacamilamarquesz'
     }
 };
 
