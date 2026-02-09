@@ -47,10 +47,10 @@ export const IMAGES = {
 
     // TESTIMONIALS SECTION
     // Proporção ideal: 1:1 (Circular) | Dimensões: 200x200px (Resolução padrão para avatares)
-    testimonial1: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB90UyZ8leyrV0HZiLYFv8BTsqJ7pg7ahaXV8R6gIE1alZoe9PCD1ij5EIzkU97jCRGkOWc1yT0Uc5fZgCfci8NM_kA6grLp4nvxkH7bjNtH-Y3BDKVXsHDlOSvG2MHMpG55b3yfmaHBhOImpE32qQwyTNil4REHKk7_90dR8_j-LKdn0YvFPkxed8dUfp1lo82ENlgBup0Y2kOCAaGYXCL1cj9hQYULyXP-zUyd47NLbBAAV4HEWDs6c0I2szDJdoL5mZZaLws9Q',
-    testimonial2: 'https://lh3.googleusercontent.com/aida-public/AB6AXuARg__npgxvx7HcPBFVZi88HVp_8fY5BurMD2Q9qcTpxpkoEmwpHbRvKezsWcKkDLiXVVesm-zO6RpIs84YmD2x8fjx6VTZHR4hn7EAfi7h7Zv9rxue-NpsAI-qVqaUUsoQY5ndIEHoMjxD7BlPcWOtWdZYPlZq2GC6mFsvzQfAwyhIIMfaGKl75mHrBcohmQG-1mw9QzVbz030pcZzVmyBPd4eoJBEgVGRjSkv4IKv5cilJTSZLYxh-YbST3ZikbGJZeBbpbINbA',
-    testimonial3: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9oRTEcmomWGKZE8lKsNsVLEr5CPIlZ5sT98hWxIR_YG-5EXbBdL60bsiHQNpQAQTGSW4gGigKtDk9Izz_lK-10P7jrbs3idV2bMPzyyarAFMKG4X8annYuBE57ZdEe-tmiEoPvUiK7zpg-aZnVgR9k1LYmOhVg04tq2EyOJYuBdIAVJEqgLzXGtHV49LZazugZrrGplUn6Asg2JifKC-EtPSOySxgTIxCDMoL5zjw1WkH9bM3KT31UYG-AZVwLQJJeXGC1G-3mg',
-    testimonial4: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDfKf05E2YRIhT8cX_RtHNt7EqPk8Nmfz5iq3o8TcpY1UGnTQwvRR8EbyBHp8QGoesbdPHHZFGmAClBACN4uvfkfgeZ35TncIIYMoj5ro8yPBcYFATDTwTJwbrEaS8MhApwBWHsuja1Y_rkl-0bLaBM0tTSXlGOUN5_q5pZ8kJgCF7eRouftLQNUovV5FFbsS3TFqXNxnOZ1dLFehI5Dmplcp8CmcN5D7zpKhESNrqyUnzNN9jQlNA5HLrinvzdxZJLGlARurW1Dg',
+    testimonial1: 'testimonial1.avif',
+    testimonial2: 'testimonial2.avif',
+    testimonial3: 'testimonial3.avif',
+    testimonial4: 'testimonial4.avif',
 
     // GALLERY/SPACE SECTION
     // Proporção ideal: 4:3 ou 3:2 | Dimensões: 1200x900px (Alta qualidade para interiores)

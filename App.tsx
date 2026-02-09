@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import Home from './components/Home';
-import ServicesPage from './components/ServicesPage';
-import ScrollReveal from './components/ScrollReveal';
 import { WHATSAPP_CONFIG } from './constants';
+
+const Home = React.lazy(() => import('./components/Home'));
+const ServicesPage = React.lazy(() => import('./components/ServicesPage'));
+const ScrollReveal = React.lazy(() => import('./components/ScrollReveal'));
 
 // Component to scroll to top on route change
 const ScrollToTop = () => {
@@ -20,12 +21,14 @@ const App: React.FC = () => {
   return (
     <>
       <ScrollToTop />
-      <ScrollReveal />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/servicos" element={<ServicesPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <ScrollReveal />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/servicos" element={<ServicesPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
 
       {/* Floating WhatsApp Button (Global) */}
       <a
